@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registeration Form</title>
+</head>
+
+<script src="formcheck.js"></script>
+		<style> 
+			header{
+					padding: 1px;
+					position: -webkit-sticky;
+					color:blue;
+					text-decoration: bold;
+					background: #48CAE4;
+					float: top;
+					text-align:center;
+					font-size: 42px;
+					display: flex;
+					justify-content: space-between;
+				   }
+			nav {
+  						float: top;
+  						width: 100%;
+  						height: auto; 
+  						background: #032174;
+  						padding: 0px;
+  						text-align:;
+  						margin:0;
+  						text-align:center;
+						}
+			nav ul {
+  						list-style-type: none;
+ 						padding: 0;
+						}
+			h1{
+				background-color:black;
+				padding:10px;
+				color:white;
+				border-top-left-radius: 15px;
+				border-bottom-right-radius:15px;
+				text-align:center;
+				width:30%;
+				
+
+			}
+			article{
+				background-image:radial-gradient( #48CAE4, #032174);
+					text-decoration: none;
+					float: right;
+					text-align: left;
+					font-size: 20px
+					padding:100px;
+					width: 100%;
+					text-align: left;
+					}
+		</style>
+<style>
+		a:link, a:visited {
+  		background-color: #032174;
+  		color: white;
+  		padding: 15px 25px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+								}
+
+a:hover, a:active {
+  background-color: #032174;
+}
+body{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+}
+
+form{
+	background-color:lightskyblue;
+	width:70%;
+	margin-left:15%;
+	padding:35px;
+	
+}
+.detfil{
+	background-color:white;
+	border-radius:5px;
+	padding:10px;
+	margin-bottom:15px;
+}
+.detfil p{
+	margin:0px;
+}
+.detfil input{
+	border:0px;
+	border-bottom:2px solid grey;
+	width:100%;
+}
+.detfil input:focus{
+	outline:0px;
+}
+.detfil select{
+	width:100%;
+	border:none;
+	border-radius:3px;
+	
+}
+#sub{
+	background-color:powderblue;
+	color:black;
+	width:20%; 
+	margin-left:40%;
+	height:35px;
+	border:none;
+	border-radius:4px;
+	border:1px solid royalblue;
+}
+header h1{
+	font-family:joker;
+	width:25%;
+	font-size:35px;
+	margin:0px;
+	color:#48CAE4;
+
+}
+#logo{
+	width:40%;
+	font-size: 65px;
+	margin-right:27%;
+	font-weight:900;
+}
+#tagline{
+	font-size:25px;
+	font-style: italic;
+	height:35px;
+	margin-top:35px;
+	background-color:transparent;
+	position:absolute;
+	top:35px;
+	left:45%;
+}
+
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+<body>
+	<header>
+		<img src ="2.png" width="15%" height="150px"> <h1 id="logo">Kool Kids Klub</h1><h1 id="tagline">Bring Back The Justice</h1>
+	</header>
+	<nav>
+		<a href="kool kids klub.html">Home Page</a>
+		<a href="history.html">History</a>
+		<a href="jobs and perks.html">Jobs and Perks</a>
+	</nav>
+	
+	<article>
+		<h1>Application form</h1>
+		<p style="font-size: 20px">
+		<form action="test.js" mathod ='post'>
+			<div class="detfil"><p>
+						Name:</p>
+					
+						<input type="text" placeholder="" id="name" name="name"></div>
+					<div class="detfil"><p>Age</p>
+					
+					<input type = "number" id="age" name="age"></div>
+					<div class="detfil"><p>
+					    Gender :</p>
+					
+					<label><input type="radio" name="gender" value="male" style="width:3%">Male</label>
+					<label><input type="radio" name="gender" value="female" style="width:3%">Female</label></div>
+			<div class="detfil">	<p>
+						Email :</p>
+					
+						<input type="text"  id="email" placeholder='' name="email"></div>
+					
+				<div class="detfil">	<p>Phone Number</p>
+					
+					<input type = "number" id="phonenumber" name="PhoneNumber"></div>
+					
+				<div class="detfil"><p> Feild You Are Good At</p>
+					
+						<select id = "field" name="feild"><option select hidden value="none"></option>
+							<option value="phisycal activity">Phisycal activity</option>
+							<option value="Game Developer">Game Developer</option>
+							<option value="3D Designer">3D Designer</option>
+							<option value="App Developer">App Developer</option>
+							<option value="Audio Editor">Audio Editor</option>
+							<option value="Graphic Designer">Graphic Designer</option>
+							<option value="Motion Graphics Developer">Motion Graphics Developer</option>
+						</select></div>
+			<div class="detfil">	<p>
+				Qualification</p>
+				
+				<input type= "text" id="qualification" name ='qualification'></div>
+				<div class="detfil"><p>
+				Experience</p><br>
+				
+				<input type ="text"  id ="experience" name ="experience"></div>
+				
+						<input type="submit"  id="sub" name="submit" onclick="return validation()">
+					
+		</form>
+	</article></p>
+</body>
+</html>
